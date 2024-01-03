@@ -1,0 +1,59 @@
+<!-- <html> 
+<body>
+<script>  
+emp={id:102,name:"Sasidhar",salary:40000}  
+document.write(emp.id+" "+emp.name+" "+emp.salary);  
+</script>
+</body>
+</html>
+
+<html>
+<body>
+<script>  
+var emp=new Object();  
+emp.id=101;  
+emp.name="Sasidhar";  
+emp.salary=50000;  
+document.write(emp.id+" "+emp.name+" "+emp.salary);  
+</script> 
+</body>
+</html>
+<html>
+<body>
+<script>  
+function emp(id,name,salary){  
+this.id=id;  
+this.name=name;  
+this.salary=salary;  
+}  
+e=new emp(103,"Sasidhar",30000);  
+  
+document.write(e.id+" "+e.name+" "+e.salary);  
+</script>  
+</body>
+</html>-->
+<html>
+<body>
+<script>  
+function emp(id,name,salary){  
+this.id=id;  
+this.name=name;  
+this.salary=salary;  
+  
+this.changeSalary=changeSalary;  
+function changeSalary(otherSalary){  
+this.salary=otherSalary;  
+}  
+}  
+e=new emp(103,"Sasidhar",30000);  
+document.write(e.id+" "+e.name+" "+e.salary);  
+e.changeSalary(45000);  
+document.write("<br>"+e.id+" "+e.name+" "+e.salary);  
+</script>  
+</body>
+</html>
+
+
+
+ 
+

@@ -1,0 +1,15 @@
+function emp(firstName, lastName, emailId, age){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.emailId = emailId;
+    this.age = age;
+}
+
+ emp1 = new emp("sasidhar", "sasi", "sasi123@gmail.com", 99);
+ 
+ emp2 = new emp("ravi", "y", "sasi123@gmail.com", 100);
+ 
+ emp3 = new emp("ramu", "x", "sasi123@gmail.com", 101);
+console.log(emp1);
+console.log(emp2);
+console.log(emp3);
